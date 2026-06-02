@@ -9,16 +9,18 @@ license = "MIT"
 authors = ["stelios7-bit"]
 
 [workspace.dependencies]
-alloy-primitives = "0.8"
+alloy-primitives = { version = "0.8", features = ["serde"] }
 alloy = { version = "0.8", features = ["full"] }
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1", features = ["derive"] }
+serde_json = "1"
 toml = "0.8"
 anyhow = "1"
 thiserror = "2"
 tracing = "0.1"
 async-trait = "0.1"
 futures-util = "0.3"
+tempfile = "3"
 
 # internal
 undertow-core = { path = "crates/undertow-core" }
