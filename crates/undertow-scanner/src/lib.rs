@@ -11,6 +11,7 @@ pub mod oracle;
 pub mod provider;
 pub mod scanner;
 pub mod token_meta;
+pub mod twap;
 
 pub use chainlink::ChainlinkOracle;
 pub use discovery::{discover, plan_chunks, BorrowerSource};
@@ -21,3 +22,4 @@ pub use oracle::{FallbackOracle, PriceOracle, PricePoint};
 pub use provider::{AlloyClient, ChainClient};
 pub use scanner::{HealthScanner, TierCounts};
 pub use token_meta::{TokenMeta, TokenMetaCache, TokenMetaSource};
+pub use twap::{PoolConfig, UniswapV3Twap};
