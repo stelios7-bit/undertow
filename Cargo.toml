@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/undertow-core"]
+members = ["crates/undertow-core", "crates/undertow-scanner"]
 
 [workspace.package]
 version = "0.1.0"
@@ -10,6 +10,7 @@ authors = ["stelios7-bit"]
 
 [workspace.dependencies]
 alloy-primitives = "0.8"
+alloy = { version = "0.8", features = ["full"] }
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1", features = ["derive"] }
 toml = "0.8"
@@ -17,9 +18,11 @@ anyhow = "1"
 thiserror = "2"
 tracing = "0.1"
 async-trait = "0.1"
+futures-util = "0.3"
 
 # internal
 undertow-core = { path = "crates/undertow-core" }
+undertow-scanner = { path = "crates/undertow-scanner" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
