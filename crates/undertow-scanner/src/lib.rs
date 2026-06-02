@@ -4,6 +4,10 @@
 
 pub mod listener;
 pub mod provider;
+pub mod scanner;
+pub mod token_meta;
 
 pub use listener::BlockListener;
 pub use provider::{AlloyClient, ChainClient};
+pub use scanner::{HealthScanner, TierCounts};
+pub use token_meta::{TokenMeta, TokenMetaCache, TokenMetaSource};
