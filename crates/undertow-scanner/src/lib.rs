@@ -3,6 +3,8 @@
 //! surfaces liquidatable positions.
 
 pub mod chainlink;
+pub mod discovery;
+pub mod discovery_store;
 pub mod listener;
 pub mod oracle;
 pub mod provider;
@@ -10,6 +12,8 @@ pub mod scanner;
 pub mod token_meta;
 
 pub use chainlink::ChainlinkOracle;
+pub use discovery::{discover, plan_chunks, BorrowerSource};
+pub use discovery_store::DiscoveryCheckpoint;
 pub use listener::BlockListener;
 pub use oracle::{FallbackOracle, PriceOracle, PricePoint};
 pub use provider::{AlloyClient, ChainClient};
