@@ -1,6 +1,10 @@
 [workspace]
 resolver = "2"
-members = ["crates/undertow-core", "crates/undertow-scanner"]
+members = [
+    "crates/undertow-core",
+    "crates/undertow-scanner",
+    "crates/undertow-protocols",
+]
 
 [workspace.package]
 version = "0.1.0"
@@ -25,6 +29,7 @@ tempfile = "3"
 # internal
 undertow-core = { path = "crates/undertow-core" }
 undertow-scanner = { path = "crates/undertow-scanner" }
+undertow-protocols = { path = "crates/undertow-protocols" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

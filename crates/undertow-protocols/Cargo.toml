@@ -1,0 +1,19 @@
+[package]
+name = "undertow-protocols"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+undertow-core.workspace = true
+undertow-scanner.workspace = true
+alloy.workspace = true
+alloy-primitives.workspace = true
+tokio.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+async-trait.workspace = true
+
+[lints]
+workspace = true
