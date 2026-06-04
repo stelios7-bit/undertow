@@ -5,12 +5,16 @@
 
 pub mod batcher;
 pub mod builder;
+pub mod flashloan;
 pub mod gas;
 pub mod nonce;
 pub mod simulation;
 pub mod submit;
 
 pub use batcher::{take_batch, BatchConfig};
+pub use flashloan::{
+    cheapest, encode_aave_flash, encode_balancer_flash, flash_fee_usd, FlashSource,
+};
 pub use builder::{build_tx, encode_liquidation, LiquidationCall};
 pub use gas::{FeeConfig, Fees};
 pub use nonce::NonceManager;
