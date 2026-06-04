@@ -3586,6 +3586,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "undertow-executor"
+version = "0.1.0"
+dependencies = [
+ "alloy",
+ "alloy-primitives",
+ "anyhow",
+ "async-trait",
+ "tokio",
+ "tracing",
+ "undertow-core",
+]
+
+[[package]]
 name = "undertow-protocols"
 version = "0.1.0"
 dependencies = [
