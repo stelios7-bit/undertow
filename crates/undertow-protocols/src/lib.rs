@@ -5,6 +5,8 @@
 
 pub mod multicall;
 pub mod util;
+pub mod venus;
 
 pub use multicall::{aggregate3, call3, chunk_calls, Call3, CallResult, MULTICALL3};
 pub use util::{build_position, token_amount_to_f64, usd_value};
+pub use venus::VenusAdapter;
