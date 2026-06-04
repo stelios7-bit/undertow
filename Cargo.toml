@@ -4,6 +4,7 @@ members = [
     "crates/undertow-core",
     "crates/undertow-scanner",
     "crates/undertow-protocols",
+    "crates/undertow-executor",
 ]
 
 [workspace.package]
@@ -30,6 +31,7 @@ tempfile = "3"
 undertow-core = { path = "crates/undertow-core" }
 undertow-scanner = { path = "crates/undertow-scanner" }
 undertow-protocols = { path = "crates/undertow-protocols" }
+undertow-executor = { path = "crates/undertow-executor" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
